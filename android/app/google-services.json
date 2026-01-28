@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "493437789548",
+    "project_id": "toptaxi-user",
+    "storage_bucket": "toptaxi-user.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:493437789548:android:e81718b1ebaef3a3d5bf49",
+        "android_client_info": {
+          "package_name": "com.toptaxi.user"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0lPMIr-SjyZcg1zLhbGjxz831_OgEW04"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
