@@ -54,6 +54,7 @@
     "react-native-screens": "3.34.0",
     "react-native-share": "^12.2.4",
     "react-native-sound": "^0.13.0",
+    "react-native-svg": "^15.15.1",
     "react-native-swiper": "^1.6.0",
     "react-native-webview": "^13.16.0",
     "react-redux": "^9.2.0",
