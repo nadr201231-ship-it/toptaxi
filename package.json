@@ -42,6 +42,7 @@
     "react-native-fs": "^2.20.0",
     "react-native-gesture-handler": "^2.30.0",
     "react-native-get-location": "^6.0.1",
+    "react-native-google-mobile-ads": "^16.0.3",
     "react-native-image-picker": "^7.2.3",
     "react-native-maps": "^1.26.20",
     "react-native-maps-directions": "^1.9.0",
