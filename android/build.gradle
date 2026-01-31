@@ -20,3 +20,20 @@ buildscript {
 }
 
 apply plugin: "com.facebook.react.rootproject"
+
+subprojects {
+    afterEvaluate { project ->
+        if (project.plugins.hasPlugin("kotlin-android")) {
+            project.tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+                kotlinOptions {
+                    jvmTarget = "17"
+                    freeCompilerArgs += [
+                        "-Xjvm-default=all",
+                        "-opt-in=kotlin.RequiresOptIn"
+                    ]
+                }
+            }
+        }
+    }
+}
+
