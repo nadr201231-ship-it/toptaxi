@@ -6,7 +6,7 @@ buildscript {
         targetSdkVersion = 34   // ✅ هذا السطر هو الحل
         ndkVersion = "27.1.12297006"
 
-        kotlinVersion = "1.9.24" // ⚠️ مهم (انزل من 2.0)
+        kotlinVersion = "1.8.22" // ⚠️ مهم (انزل من 2.0)
     }
     repositories {
         google()
