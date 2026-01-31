@@ -1,7 +1,7 @@
 import { Alert } from "react-native";
 import { getValue } from "../utils/localstorage/index";
 import { URL } from "./config";
-import axios from "axios";
+import axios from "axios/dist/browser/axios.cjs";
 
 export const POST_API = async (body?: any, api?: string) => {
   const token = await getValue("token");
