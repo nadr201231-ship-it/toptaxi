@@ -1,13 +1,11 @@
 module.exports = function (api) {
   api.cache(true);
 
-  const isReleaseCI = process.env.BUILD_RELEASE === 'true';
-
   return {
     presets: ['module:@react-native/babel-preset'],
     plugins: [
-      // ❌ عطّل reanimated plugin في Release CI فقط
-      ...(isReleaseCI ? [] : ['react-native-reanimated/plugin']),
+      // 🔥 يجب أن يكون موجود ودائمًا آخر plugin خاص بـ reanimated
+      'react-native-reanimated/plugin',
 
       [
         'module-resolver',
