@@ -9,7 +9,7 @@ import { appColors, appFonts } from '@src/themes';
 import { useRoute } from '@react-navigation/native';
 import { commonStyles } from '@src/styles/commonStyle';
 import { ValidatePhoneNumber } from '@src/utils/validation';
-import CountryPicker, { getCallingCode, } from 'react-native-country-picker-modal';
+//import CountryPicker, { getCallingCode, } from 'react-native-country-picker-modal';
 import { ICountry } from 'react-native-country-select/lib/interface/country';
 
 interface RouteParams {

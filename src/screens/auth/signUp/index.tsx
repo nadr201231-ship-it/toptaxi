@@ -14,7 +14,7 @@ import { countryData, selfData, userRegistration } from "@src/api/store/actions"
 import { setValue } from "@src/utils/localstorage";
 import { useAppNavigation, useAppRoute } from "@src/utils/navigation";
 import { commonStyles } from "@src/styles/commonStyle";
-import CountryPicker from 'react-native-country-picker-modal';
+//import CountryPicker from 'react-native-country-picker-modal';
 import { ValidatePhoneNumber } from "@src/utils/validation";
 import messaging from '@react-native-firebase/messaging';
 import { useNavigation, useTheme } from "@react-navigation/native";
