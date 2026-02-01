@@ -6,29 +6,20 @@ buildscript {
         targetSdkVersion = 34   // ✅ هذا السطر هو الحل
         ndkVersion = "27.1.12297006"
 
-        kotlinVersion = "1.8.22" // ⚠️ مهم (انزل من 2.0)
+        kotlinVersion = "1.9.24" // ⚠️ مهم (انزل من 2.0)
+        // 🔥 هذا السطر هو الحل الأساسي
+        googleMobileAdsJson = [:]
     }
     repositories {
         google()
         mavenCentral()
     }
     dependencies {
-        classpath("com.android.tools.build:gradle")
+        classpath("com.android.tools.build:gradle:8.6.1")
         classpath("com.facebook.react:react-native-gradle-plugin")
-        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.24")
     }
 }
 
 apply plugin: "com.facebook.react.rootproject"
 
-subprojects {
-    tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
-        kotlinOptions {
-            jvmTarget = "17"
-            freeCompilerArgs += [
-                "-Xjvm-default=all",
-                "-opt-in=kotlin.RequiresOptIn"
-            ]
-        }
-    }
-}
